@@ -6,7 +6,7 @@ import '../css/index.css';
 
 type TAddMovieProps = { setAddedMovies: Dispatch<SetStateAction<IMovie[]>>; };
 
-export function Addmovie({setAddedMovies}: TAddMovieProps): ReactElement {
+export function AddMovie({setAddedMovies}: TAddMovieProps): ReactElement {
   const formRef = useRef<HTMLFormElement>(null);
   const onSubmit: FormEventHandler<HTMLFormElement> = e => {
     e.preventDefault();
